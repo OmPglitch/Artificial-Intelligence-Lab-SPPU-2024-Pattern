@@ -1,5 +1,5 @@
 
-# Practical 1: Simple Reflex Agent for Vacuum Cleaner
+# Practical 1: Simple Reflex Agent 
 
 def vacuum_agent(location, status):
     # Rule 1: If current location is dirty, clean it

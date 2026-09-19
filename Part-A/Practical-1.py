@@ -1,3 +1,5 @@
+# To design and implement a simple reflex agent for the Vacuum Cleaner world and analyze its rational behavior in a given environment.
+
 A_state = input("Enter initial state for A room (clean/dirty): ").lower()
 B_state = input("Enter initial state for B room (clean/dirty): ").lower()
 agent_location = input("Enter initial location for agent (A/B): ").upper()

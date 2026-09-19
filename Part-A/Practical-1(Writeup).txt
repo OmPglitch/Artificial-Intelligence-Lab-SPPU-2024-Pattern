@@ -1,1 +1,156 @@
+Practical No. 1
+
+Title
+
+To design and implement a simple reflex agent for the Vacuum Cleaner world and analyze its rational behavior in a given environment.
+
+Objectives
+
+1. To understand the concept of an intelligent agent and its interaction with an environment.
+2. To study the working of a simple reflex agent.
+3. To design a simple reflex agent for the Vacuum Cleaner world.
+4. To implement the agent using suitable programming language.
+5. To analyze the rational behavior of the agent for different environmental conditions.
+
+Problem Statement
+
+Design and implement a Simple Reflex Agent for a two-room Vacuum Cleaner world. The environment consists of two rooms, Room A and Room B. Each room can either be Clean or Dirty. The vacuum cleaner can be located in either Room A or Room B.
+
+The agent should sense the current location and condition of the room and perform an appropriate action according to predefined condition-action rules.
+
+The agent should follow these rules:
+
+If the current room is dirty, the agent should **Suck** the dirt.
+If the current room is clean and the agent is in Room A, it should Move Right to Room B.
+If the current room is clean and the agent is in Room B, it should Move Left to Room A.
+
+The behavior of the agent should be analyzed for different initial configurations of the environment.
+
+
+
+Theory
+
+1. Intelligent Agent
+
+An intelligent agent is a system that perceives its environment through sensors and performs actions through actuators. The main purpose of an intelligent agent is to select an appropriate action based on the current state of its environment.
+
+An agent continuously follows the cycle:
+
+Perceive → Decide → Act
+
+For example, a vacuum cleaner uses sensors to detect whether the current location is dirty or clean. Based on this information, it decides whether to suck the dirt or move to another room.
+
+2. Agent and Environment
+
+The agent is the entity that performs actions, while the environment is the surrounding world in which the agent operates.
+
+In the Vacuum Cleaner world:
+
+Agent: Vacuum Cleaner
+Environment: Two-room environment
+Sensors: Detect current location and whether the room is clean or dirty
+Actuators: Perform Suck, Move Left, and Move Right actions
+
+The agent receives information from the environment through its sensors and performs an action using its actuators.
+
+ 3. Vacuum Cleaner World
+
+The Vacuum Cleaner world is a simple example used to understand intelligent agents.
+
+Consider two rooms:
+
+Room A ↔ Room B
+
+Each room can have one of two conditions:
+
+Clean
+Dirty
+
+The vacuum cleaner can be present in either room.
+
+Therefore, the agent needs to determine its action based on:
+
+1. Current location
+2. Current room condition
+
+4. Simple Reflex Agent
+
+A Simple Reflex Agent selects an action only according to the current percept. It does not maintain a history of previous states.
+
+The agent uses condition-action rules.
+
+The rules for the Vacuum Cleaner world are:
+
+| Condition                                    |   Action   |
+| -------------------------------------------- | ---------- |
+| Current room is Dirty                        | Suck       |
+| Current room is Clean and agent is in Room A | Move Right |
+| Current room is Clean and agent is in Room B | Move Left  |
+
+For example, if the vacuum cleaner is in Room A and Room A is dirty, it immediately performs the Suck action.
+
+If Room A is clean, it moves to Room B.
+
+ 5. Rational Behavior
+
+A rational agent selects an action that is expected to maximize its performance measure based on the information available to it.
+
+For the Vacuum Cleaner agent, rational behavior means:
+
+Cleaning a dirty room whenever possible.
+Moving to another room when the current room is clean.
+Avoiding unnecessary cleaning actions on an already clean room.
+
+The performance of the agent can be measured by the amount of dirt cleaned and the number of unnecessary movements or actions.
+
+PEAS Description
+
+The Vacuum Cleaner agent can be described using the PEAS framework.
+
+P – Performance Measure
+
+Maximum number of clean rooms
+Minimum unnecessary actions
+Efficient cleaning
+
+E – Environment
+
+Room A
+Room B
+Clean/Dirty states
+
+A – Actuators
+
+Suck
+Move Left
+Move Right
+
+S – Sensors
+
+Current location sensor
+Dirt sensor
+
+
+
+Algorithm
+
+1. Start the program.
+2. Define two rooms, Room A and Room B.
+3. Assign the initial condition of each room as Clean or Dirty.
+4. Set the initial position of the vacuum cleaner.
+5. Sense the current room and its condition.
+6. If the current room is dirty, perform the Suck action.
+7. If the current room is clean and the vacuum is in Room A, move to Room B.
+8. If the current room is clean and the vacuum is in Room B, move to Room A.
+9. Display the current state and action performed.
+10. Repeat the process for the required number of steps.
+11. Stop the program.
+
+
+
+Conclusion
+
+The Simple Reflex Agent for the Vacuum Cleaner world was successfully designed and implemented. The agent selects its action based only on the current percept and follows predefined condition-action rules. It performs Suck when the current room is dirty and moves to the other room when the current room is clean.
+
+The experiment demonstrates that a simple reflex agent can perform rational actions in a simple and completely observable environment. However, since the agent does not remember previous states, its behavior depends only on the current condition of the environment.
 

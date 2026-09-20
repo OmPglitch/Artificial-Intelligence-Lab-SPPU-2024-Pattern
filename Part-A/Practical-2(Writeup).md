@@ -65,15 +65,7 @@ The internal state helps the agent remember relevant information about the envir
 
 In this experiment, the environment is represented as a rectangular grid.
 For example:
-
-
-
-
-
-
-
-
-
+<img width="426" height="348" alt="Screenshot 2026-09-20 110834" src="https://github.com/user-attachments/assets/9d79219f-b231-4958-8aa0-14529b59e60a" />
 
 Where:
 S = Starting position
@@ -183,31 +175,9 @@ Repeat
 
 
 Test Cases
-Test Case
-Start
-Goal
-Environment
-Expected Result
-1
-(0,0)
-(2,2)
-No obstacles
-Agent reaches goal
-2
-(0,0)
-(2,2)
-Obstacle at (0,1)
-Agent avoids obstacle
-3
-(0,0)
-(3,3)
-Multiple obstacles
-Agent finds valid path
-4
-(1,0)
-(3,3)
-Obstacles on direct path
-Agent changes direction and reaches goal
+
+<img width="766" height="360" alt="image" src="https://github.com/user-attachments/assets/fdddda1a-3a9e-4972-94e0-3836cb4f7093" />
+
 
 Conclusion / Analysis
 The Model-Based Intelligent Agent was successfully implemented for navigating a grid environment containing obstacles. The agent maintains an internal state representation of its current position and the information discovered about the environment.

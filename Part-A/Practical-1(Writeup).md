@@ -81,11 +81,8 @@ The agent uses condition-action rules.
 
 The rules for the Vacuum Cleaner world are:
 
-| Condition                                    |   Action   |
-| -------------------------------------------- | ---------- |
-| Current room is Dirty                        | Suck       |
-| Current room is Clean and agent is in Room A | Move Right |
-| Current room is Clean and agent is in Room B | Move Left  |
+<img width="527" height="252" alt="image" src="https://github.com/user-attachments/assets/7697aa5c-3393-4e69-b604-b7b8c3da3213" />
+
 
 For example, if the vacuum cleaner is in Room A and Room A is dirty, it immediately performs the Suck action.
 

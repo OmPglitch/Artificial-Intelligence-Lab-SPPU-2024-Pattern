@@ -1,3 +1,5 @@
+# To implement a model-based intelligent agent capable of navigating a grid environment with obstacles using internal state representation.
+
 grid = [
     ["A", 0, 0, 1],
     [1, 1, 0, 1],

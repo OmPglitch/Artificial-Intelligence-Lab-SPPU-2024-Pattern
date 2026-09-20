@@ -180,7 +180,9 @@ Test Cases
 
 
 Conclusion / Analysis
+
 The Model-Based Intelligent Agent was successfully implemented for navigating a grid environment containing obstacles. The agent maintains an internal state representation of its current position and the information discovered about the environment.
+
 The agent successfully avoids known obstacles and selects valid movements to reach the goal. The experiment demonstrates that maintaining an internal state enables an intelligent agent to make better decisions using information obtained from previous perceptions. Thus, a model-based agent is more suitable than a simple reflex agent for environments where the complete state of the environment cannot always be directly observed.
 
 
